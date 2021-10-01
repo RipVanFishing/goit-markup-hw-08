@@ -639,12 +639,24 @@ ul {
   padding-top: 94px;
 }
 
+@media screen and (max-width: 1200px) {
+  .section-properties {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .section-properties .section-properties__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .section-properties .section-properties__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .section-properties .section-properties__wrap-icon {
