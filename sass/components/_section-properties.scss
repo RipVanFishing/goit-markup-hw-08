@@ -1,29 +1,27 @@
-.properties-title {
-  margin: 0;
-}
-
 .section-properties {
   background-color: $mainColor;
   padding-bottom: 94px;
   padding-top: 94px;
-  &__list {
+
+  .section-properties__list {
     display: flex;
     margin-bottom: 0;
     padding-left: 0;
   }
-  &__item {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+
+  .section-properties__wrap-icon {
     width: 270px;
     height: 120px;
-    background-color: $accentBgc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
+    background-color: $accentBgc;
   }
   &__item:not(:last-child) {
     margin-right: 30px;
   }
-  &__subtitle {
+  .section-properties__subtitle {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -31,7 +29,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-  &__text {
+  .section-properties__text {
     margin-top: 0;
     font-weight: 400;
     font-size: 14px;
