@@ -163,31 +163,6 @@ ul {
   padding: 0;
 }
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -651,7 +626,7 @@ ul {
   padding-left: 0;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .section-properties .section-properties__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -675,8 +650,22 @@ ul {
   background-color: #f5f4fa;
 }
 
-.section-properties__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 479px) {
+  .section-properties .section-properties__wrap-icon {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-properties__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-properties__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section-properties .section-properties__subtitle {
@@ -686,6 +675,14 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .section-properties .section-properties__subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 .section-properties .section-properties__text {
@@ -699,30 +696,61 @@ ul {
 
 .section-team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
-.section-team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (max-width: 1199px) {
+  .section-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-team .section-team__list {
   margin-bottom: 0;
   padding-left: 0;
 }
 
-.section-team__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .section-team .section-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.section-team__item {
+@media screen and (max-width: 479px) {
+  .section-team .section-team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team .section-team__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.section-team .section-team__item {
   width: 270px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.section-team__title {
+@media screen and (max-width: 479px) {
+  .section-team .section-team__item {
+    width: 450px;
+  }
+}
+
+.section-team .section-team__title {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
@@ -733,23 +761,34 @@ ul {
   text-align: center;
 }
 
-.section-team__card-content {
+@media screen and (max-width: 1200px) {
+  .section-team .section-team__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+.section-team .section-team__card-content {
   text-align: center;
   padding: 30px 32px;
   background-color: #ffffff;
 }
 
-.section-team__icon-thumb {
+.section-team .section-team__icon-thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 16px;
 }
 
-.section-team__subtitle {
+.section-team .section-team__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -757,7 +796,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.section-team__text {
+.section-team .section-team__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -771,6 +810,13 @@ ul {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .section-clients__item {
   width: 170px;
   height: 92px;
@@ -779,6 +825,14 @@ ul {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 478px) {
+  .section-clients__item {
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+  }
 }
 
 .section-clients__border {
@@ -791,6 +845,20 @@ ul {
   display: flex;
 }
 
+@media screen and (max-width: 478px) {
+  .section-clients__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .section-clients__title {
   font-weight: 700;
   font-size: 36px;
@@ -801,6 +869,14 @@ ul {
   margin-bottom: 51px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-clients__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
 .section-clients__item:hover, .section-clients__item:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
@@ -808,10 +884,6 @@ ul {
 
 .section-clients__icon {
   display: block;
-}
-
-.section-clients__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .section-clients__link {
@@ -1076,13 +1148,21 @@ ul {
           transform: translateY(0);
 }
 
-.page-footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (max-width: 479px) {
+  .page-footer__wrapper {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .page-footer {
@@ -1234,6 +1314,12 @@ ul {
 .main-logo__footer {
   color: #ffffff;
   margin-left: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .main-logo__footer {
+    margin-right: auto;
+  }
 }
 
 .main-logo__header {
