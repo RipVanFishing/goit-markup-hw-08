@@ -1,4 +1,4 @@
-%container {
+.container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -16,7 +16,7 @@
   }
 }
 
-%hidden {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
