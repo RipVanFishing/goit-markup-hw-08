@@ -1,16 +1,12 @@
 .header-nav {
-  // @media screen and (min-width: $mobile) {
-  //   display: none;
-  // }
-
   margin-left: 93px;
-  .header-nav__list {
+  &__list {
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
   }
-  .header-nav__link {
+  &__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -21,7 +17,7 @@
     color: $brandColor;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header-nav__link--current {
+  &__link--current {
     position: relative;
     color: $accentColor;
   }

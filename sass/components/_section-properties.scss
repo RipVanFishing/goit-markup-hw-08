@@ -1,53 +1,29 @@
-container {
-  @extend %container;
+.properties-title {
+  margin: 0;
 }
 
 .section-properties {
-  @media screen and (max-width: $desktop) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
   background-color: $mainColor;
   padding-bottom: 94px;
   padding-top: 94px;
-
-  .section-properties__list {
+  &__list {
+    display: flex;
     margin-bottom: 0;
     padding-left: 0;
-
-    @media screen and (min-width: $tablet) {
-      display: flex;
-    }
   }
-
-  .section-properties__wrap-icon {
-    @media screen and (max-width: 479px) {
-      width: 450px;
-    }
-    width: 270px;
-    height: 120px;
-    display: flex;
+  &__item {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
     background-color: $accentBgc;
+    margin-bottom: 30px;
   }
   &__item:not(:last-child) {
-    @media screen and (max-width: $tablet) {
-      margin-bottom: 30px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-right: 30px;
-    }
+    margin-right: 30px;
   }
-
-  .section-properties__subtitle {
-    @media screen and (max-width: $tablet) {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
+  &__subtitle {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -55,7 +31,7 @@ container {
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-  .section-properties__text {
+  &__text {
     margin-top: 0;
     font-weight: 400;
     font-size: 14px;

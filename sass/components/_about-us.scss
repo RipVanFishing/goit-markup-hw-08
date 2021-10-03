@@ -1,8 +1,4 @@
 .about-us {
-  @media screen and (max-width: $desktop) {
-    display: none;
-  }
-
   background-color: $mainColor;
   padding-bottom: 94px;
   &__list {

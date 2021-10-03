@@ -1,7 +1,7 @@
 .page-header {
   background-color: $mainColor;
   border-bottom: 1px solid #ececec;
-  .page-header__wrapper {
+  &__wrapper {
     display: flex;
     align-items: center;
   }
