@@ -632,7 +632,7 @@ a {
 .modal-form__input-check:checked ~ .modal-form__icon-check {
   background-color: #2196f3;
   fill: #2196f3;
-  background-image: url(.../images/icons/close.svg);
+  background-image: url(../images/icons/iconcheck.svg);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
