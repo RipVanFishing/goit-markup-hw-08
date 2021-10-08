@@ -122,7 +122,7 @@
                             <label class="modal-form__check" >
                                  <input class="modal-form__input-check visually-hidden" name="confirmation" type="checkbox"><span class="form-label-check"></span>Соглашаюсь с рассылкой и принимаю</span> <a class="modal-form__link" href="#">Условия договора</a>
                                  <svg class="modal-form__icon-check" width="16" height="15">
-                                     <use href="./images/icons.svg#icon-not-check"></use>
+                                     <use href="./images/icons.svg#icon-check"></use>
                                  </svg>
                                 </label>
 
@@ -137,8 +137,8 @@
             <div class="container">
                 <h2 class="visually-hidden">Наши возможности</h2>
                 <ul class="section-properties__list">
-                    <li>
-                        <div class="section-properties__item">
+                    <li class="section-properties__item">
+                        <div class="section-properties__icon-wrap">
                             <svg class="section-properties__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-radar"></use>
                             </svg>
@@ -146,16 +146,17 @@
                         <h3 class="section-properties__subtitle">Внимание к деталям</h3>
                         <p class="section-properties__text">Идейные соображения, а также начало повседневной работы по формированию позиции. </p>
                     </li>
-                    <li>
-                        <div class="section-properties__item"><svg class="section-properties__icon" width="70" height="70">
+                    <li class="section-properties__item">
+                        <div class="section-properties__icon-wrap">
+                        <svg class="section-properties__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
                         <h3 class="section-properties__subtitle">Пунктуальность</h3>
                         <p class="section-properties__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li>
-                        <div class="section-properties__item">
+                    <li class="section-properties__item">
+                        <div class="section-properties__icon-wrap">
                             <svg class="section-properties__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-computer"></use>
                             </svg>
@@ -163,8 +164,8 @@
                         <h3 class="section-properties__subtitle">Планирование</h3>
                         <p class="section-properties__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li>
-                        <div class="section-properties__item">
+                    <li class="section-properties__item">
+                        <div class="section-properties__icon-wrap">
                             <svg class="section-properties__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
@@ -202,7 +203,12 @@
                 <ul class="section-team__list">
                     <li class="section-team__item">
                         <div class="section-team__card-thumb">
-                            <img src="./images/team/igor.jpg" alt="Игорь Демьяненко" width="270">
+                           <picture>
+                            <source srcset="./images/team/igor450.jpg 1x, ./images/team/igor900.jpg 2x" type="image/jpeg" media="(max-width=767px)" >
+                            <source srcset="./images/team/igor357@1x.jpg 1x, ./images/team/igor357@2x.jpg 2x" type="image/jpeg" media="(max-width=1199px)" >   
+                            <source srcset="./images/team/igor450.jpg 1x, ./images/team/igor900.jpg 2x" type="image/jpeg" media="(min-width=1200px)" >
+                            <img src='./images/team/igor450.jpg' srcset="./images/team/igor450.jpg 1x, ./images/team/igor900.jpg 2x" alt="Игорь Демьяненко" width="100%" >
+                        </picture>
                         </div>
                         <div class="section-team__card-content">
                             <h3 class="section-team__subtitle">Игорь Демьяненко</h3>
@@ -236,7 +242,12 @@
                     </li>
                     <li class="section-team__item">
                         <div class="section-team__card-thumb">
-                            <img src="./images/team/olga.jpg" alt="Ольга Репина" width="270">
+                            <picture>
+                                <source srcset="./images/team/olga450.jpg 1x, ./images/team/olga900.jpg 2x" type="image/jpeg" media="(max-width=767px)" >
+                                <source srcset="./images/team/olga354@1x.jpg 1x, ./images/team/olga354@2x.jpg 2x" type="image/jpeg" media="(max-width=1199px)" >   
+                                <source srcset="./images/team/olga450.jpg 1x, ./images/team/olga900.jpg 2x" type="image/jpeg" media="(min-width=1200px)" >
+                                <img src='./images/team/olga450.jpg' srcset="./images/team/olga450.jpg 1x, ./images/team/olga900.jpg 2x" alt="Ольга Репина" width="100%" >
+                            </picture>
                         </div>
                         <div class="section-team__card-content">
                             <h3 class="section-team__subtitle">Ольга Репина</h3>
@@ -270,7 +281,12 @@
                     </li>
                     <li class="section-team__item">
                         <div class="section-team__card-thumb">
-                            <img src="./images/team/nikolay.jpg" alt="Николай Тарасов" width="270">
+                            <picture>
+                                <source srcset="./images/team/nikolay450.jpg 1x, ./images/team/nikolay900.jpg 2x" type="image/jpeg" media="(max-width=767px)" >
+                                <source srcset="./images/team/nikolay354@1x.jpg 1x, ./images/team/nikolay354@2x.jpg 2x" type="image/jpeg" media="(max-width=1199px)" >   
+                                <source srcset="./images/team/nikolay450.jpg 1x, ./images/team/nikolay900.jpg 2x" type="image/jpeg" media="(min-width=1200px)" >
+                                <img src='./images/team/nikolay450.jpg' srcset="./images/team/nikolay450.jpg 1x, ./images/team/nikolay900.jpg 2x" alt="Николай Тарасов" width="100%" >
+                            </picture>
                         </div>
                         <div class="section-team__card-content">
                             <h3 class="section-team__subtitle">Николай Тарасов</h3>
@@ -304,7 +320,12 @@
                     </li>
                     <li class="section-team__item">
                         <div class="section-team__card-thumb">
-                            <img src="./images/team/michail.jpg" alt="Михаил Ермаков" width="270">
+                            <picture>
+                                <source srcset="./images/team/mihail450.jpg 1x, ./images/team/mihail900.jpg 2x" type="image/jpeg" media="(max-width=767px)" >
+                                <source srcset="./images/team/mihail354@1x.jpg 1x, ./images/team/mihail354@2x.jpg 2x" type="image/jpeg" media="(max-width=1199px)" >   
+                                <source srcset="./images/team/mihail450.jpg 1x, ./images/team/mihail900.jpg 2x" type="image/jpeg" media="(min-width=1200px)" >
+                                <img src='./images/team/mihail450.jpg' srcset="./images/team/mihail450.jpg 1x, ./images/team/mihail900.jpg 2x" alt="Михаил Ермаков" width="100%" >
+                            </picture>
                         </div>
                         <div class="section-team__card-content">
                             <h3 class="section-team__subtitle">Михаил Ермаков</h3>
@@ -439,7 +460,10 @@
             </div>  
         </div>
     </footer>
-    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="./JS/mobile-menu.js"></script>
     <script src="./JS/modal.js"></script>
 </body>
 

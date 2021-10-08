@@ -1,0 +1,47 @@
+.section-properties {
+    background-color: $mainColor;
+     padding-top: 60px;
+      padding-bottom: 60px;
+    
+    
+    &__item {
+     width: 450px;
+    height: 226px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+     
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    &__icon-wrap {
+    width: 450px;
+    height: 120px;
+    margin-bottom: 30px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $accentBgc;
+    }
+    
+      &__subtitle {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+  }
+    &__text {
+      margin-top: 0;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $contactColor;
+      
+    }
+  }
+  
