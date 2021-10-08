@@ -2,7 +2,20 @@
     background-color: $mainColor;
      padding-top: 60px;
       padding-bottom: 60px;
-    
+      @media screen and (min-width:$desktop) {
+      padding-bottom: 94px;
+    padding-top: 94px;
+      }
+
+    &__list {
+    @media screen and (min-width: $tablet) {
+     display: flex;
+     } 
+     @media screen and (min-width: $tablet) and (max-width:1199px) {
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
     
     &__item {
      width: 450px;
@@ -11,10 +24,23 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-     
+
+    @media screen and (min-width: $tablet) and (max-width:1199px) {
+      flex-basis: calc(( 100% - 4 * 15px) / 2);
+      margin: 15px; 
+
+
     }
+    }
+    
     &__item:not(:last-child) {
-        margin-bottom: 30px;
+      @media screen and (max-width:767px) {
+        margin-bottom: 30px; 
+      }
+      @media screen and (min-width:$desktop) {
+        margin-right: 30px;
+      }
+
     }
     &__icon-wrap {
     width: 450px;
@@ -24,6 +50,16 @@
     justify-content: center;
     align-items: center;
     background-color: $accentBgc;
+    
+    @media screen and (min-width:$tablet) {
+      width: 354px;
+      height: 120px; }
+    
+      @media screen and (min-width:$desktop) {
+      width: 270px;
+      height: 120px;
+      }
+    
     }
     
       &__subtitle {
@@ -33,6 +69,9 @@
       line-height: 1.14;
       letter-spacing: 0.03em;
       text-transform: uppercase;
+      @media screen and (min-width:$tablet) {
+        margin-right: auto;
+      }
   }
     &__text {
       margin-top: 0;
@@ -43,5 +82,4 @@
       color: $contactColor;
       
     }
-  }
-  
+    }
