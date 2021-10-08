@@ -87,7 +87,13 @@
           <li class="category-list__item">
               <a  href="" class="category-list__link">
                 <div class="category-list__thumb">
-                <img src="./images/portfolio/1.jpg" alt="Веб-сайт" width="370">
+                  <picture>
+                    <source srcset="./images/portfolio/mobile/1m.jpg 1x, ./images/portfolio/mobile/1m@2x.jpg 2x" type="image/jpeg" media="(max-width=767px)" >
+                    <source srcset="./images/portfolio/tablet/1t.jpg 1x, ./images/portfolio/tablet/1t@2x.jpg 2x" type="image/jpeg" media="(max-width=1199px)" >   
+                    <source srcset="./images/portfolio/desktop/1d.jpg 1x, ./images/portfolio/desktop/1d@2x.jpg 2x" type="image/jpeg" media="(min-width=1200px)" >
+                    <img src='./images/portfolio/mobile/1m.jpg' srcset="./images/portfolio/mobile/1m.jpg 1x, ./images/portfolio/mobile/1m@2x.jpg 2x" alt="Веб-сайт">
+                </picture>
+               
               <p class="category-list__overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
               шпионажа и атак на защищённые сервера конкурентов.</p></div>
          <div class="category-list__container-text">
@@ -98,7 +104,14 @@
         </li> 
           <li class="category-list__item">
               <a href="" class="category-list__link">
-                <div class="category-list__thumb"><img src="./images/portfolio/2.jpg" alt="Дизайн" width="370">
+                <div class="category-list__thumb">
+                  <picture>
+                    <source srcset="./images/portfolio/mobile/2m.jpg 1x, ./images/portfolio/mobile/2m@2x.jpg 2x" type="image/jpeg" media="(max-width=767px)" >
+                    <source srcset="./images/portfolio/tablet/2t.jpg 1x, ./images/portfolio/tablet/2t@2x.jpg 2x" type="image/jpeg" media="(max-width=1199px)" >   
+                    <source srcset="./images/portfolio/desktop/2d.jpg 1x, ./images/portfolio/desktop/2d@2x.jpg 2x" type="image/jpeg" media="(min-width=1200px)" >
+                    <img src='./images/portfolio/mobile/2m.jpg' srcset="./images/portfolio/mobile/2m.jpg 1x, ./images/portfolio/mobile/2m@2x.jpg 2x" alt="Дизайн">
+                </picture>
+              
                   <p class="category-list__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorum velit, nostrum nam corporis ex ratione eveniet enim facere accusantium!</p>
                   </div>
         <div class="category-list__container-text">
