@@ -402,7 +402,6 @@ a {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  display: none;
 }
 
 .menu-container.is-open {
@@ -424,7 +423,6 @@ a {
   width: 220px;
   margin-left: 40px;
   margin-top: 48px;
-  margin-bottom: 302px;
 }
 
 .menu-container__page-item {

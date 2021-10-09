@@ -9,21 +9,20 @@
     z-index: 999;
   transform: translateY(100%);
     transition: transform 250ms ease-in-out;
-    display: none;
+    
    
   &.is-open {
      transform: translateY(0);
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-     
-
-   } 
+     } 
+  
    &__page-list {
      width: 220px;
      margin-left: 40px;
      margin-top: 48px;
-     margin-bottom: 302px;
+     
    }
   &__page-item {
     font-weight: normal;
