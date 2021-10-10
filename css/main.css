@@ -148,6 +148,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -212,6 +213,12 @@ a {
   position: relative;
   background-color: #fff;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding: 0;
+  }
 }
 
 .page-header__wrapper {
@@ -1011,7 +1018,7 @@ a {
 @media screen and (min-width: 1200px) {
   .section-team {
     padding-top: 35px;
-    padding-bottom: 94px;
+    padding-bottom: 153px;
   }
 }
 
@@ -1656,6 +1663,8 @@ a {
 @media screen and (min-width: 1200px) {
   .page-footer__social-wrap {
     margin-left: 70px;
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 
@@ -1727,6 +1736,7 @@ a {
 @media screen and (min-width: 1200px) {
   .page-footer__area-email {
     min-width: 358px;
+    margin-bottom: 0;
   }
 }
 

@@ -8,6 +8,9 @@
     position: relative;
     background-color: #fff;
     border-bottom: 1px solid #ececec;
+    @media screen and (min-width:$tablet) {
+      padding: 0;
+    }
     
   
     &__wrapper {

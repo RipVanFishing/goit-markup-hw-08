@@ -103,7 +103,9 @@
       
       }
     @media screen and (min-width:$desktop) {
-        margin-left: 70px; }
+        margin-left: 70px;
+      margin-bottom: 0;
+    margin-right: 0; }
       }
   
   
@@ -158,6 +160,7 @@
       }
       @media screen and (min-width:$desktop) {
         min-width: 358px;
+        margin-bottom: 0;
       }
     }
   
