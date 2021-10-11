@@ -1,44 +1,44 @@
 .section-team {
-    background-color: $accentBgc;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @media screen and (min-width:$desktop){
-      padding-top: 35px;
-      padding-bottom: 153px;
-    }
-    
-    &__list {
-      @media screen and (min-width: $tablet) {
-        display: flex;
-      }
-      @media screen and (min-width: $tablet) and (max-width:1199px){
-        flex-wrap: wrap;
-        margin: -15px; }
-    }
-    &__item:not(:last-child) {
-    @media screen and (max-width:767px) {
-      margin-bottom: 30px; 
-    }
-    
-    @media screen and (min-width:$desktop){
-      margin-right: 30px;
-      }
+  background-color: $accentBgc;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-      
-    &__item {
-     width: 100%;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &__list {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+  &__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    @media screen and (min-width: $tablet) and (max-width:1199px){
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       flex-basis: calc((100% - 4 * 15px) / 2);
       margin: 15px;
     }
+  }
 
-    }
-
-    &__title {
+  &__title {
     font-size: 28px;
     line-height: 1.17;
     margin-top: 0;
@@ -47,39 +47,35 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     text-align: center;
-      @media screen and (min-width:$desktop) {
-        font-size: 36px;
+    @media screen and (min-width: $desktop) {
+      font-size: 36px;
       line-height: 1.16;
-      }
-
-    }
-    &__card-content {
-      text-align: center;
-      padding: 30px 32px;
-      background-color: $mainColor;
-    }
-    &__icon-thumb {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 16px;
-    }
-    &__subtitle {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.18;
-      letter-spacing: 0.03em;
-      margin-bottom: 10px;
-    }
-  
-    &__text {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.18;
-      letter-spacing: 0.03em;
-      color: $contactColor;
     }
   }
+  &__card-content {
+    text-align: center;
+    padding: 30px 32px;
+    background-color: $mainColor;
+  }
+  &__icon-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
 
-
-  
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: $contactColor;
+  }
+}

@@ -1059,8 +1059,8 @@ a {
 
 @media screen and (min-width: 1200px) {
   .section-team {
-    padding-top: 35px;
-    padding-bottom: 153px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1168,7 +1168,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .section-clients {
-    padding-top: 35px;
+    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
@@ -1268,7 +1268,7 @@ a {
 .about-us {
   display: none;
   background-color: #ffffff;
-  padding-bottom: 153px;
+  padding-bottom: 94px;
 }
 
 @media screen and (min-width: 1200px) {
