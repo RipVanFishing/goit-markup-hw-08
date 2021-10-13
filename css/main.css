@@ -463,7 +463,7 @@ a {
 }
 
 .menu-container__contact-link--tel {
-  font-weight: normal;
+  font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -477,7 +477,7 @@ a {
 }
 
 .menu-container__contact-link--email {
-  font-weight: normal;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
@@ -1609,7 +1609,7 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__address-box {
     text-align: center;
-    margin: 0;
+    margin-left: 80px;
   }
 }
 
@@ -1705,6 +1705,7 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__social-wrap {
     margin-bottom: 102px;
+    margin-left: 165px;
     margin-right: 0;
   }
 }
